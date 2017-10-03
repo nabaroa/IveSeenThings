@@ -2004,6 +2004,7 @@ html:-webkit-full-screen-ancestor, html:-moz-full-screen-ancestor {
 }
 .icon-cross:before {
     content: "\e117";
+    font-family: 'icon-slides' !important;
 }
 .icon-menu:before {
     content: "\e120";
@@ -2462,12 +2463,12 @@ body {
  * Color
  *---------------------------------------------- */
 body {
-    background: #f3f3f3;
-    color: #111111;
-    background: radial-gradient(white, #999999);
+    background: #111111;
+    color: var(--white);
+    background: radial-gradient(#444444, black);
 }
 a {
-    color: #111111;
+    color: #cccccc;
 }
 .color {
     color: #0abda3;
@@ -2626,6 +2627,7 @@ dt {
 .icon-ko {}
 .icon-ko:before {
     content: "\e117";
+    font-family: 'icon-slides' !important;
     background: red;
     position: absolute;
     right: 0;
@@ -2640,6 +2642,7 @@ dt {
 .icon-ok {}
 .icon-ok:before {
     background: green;
+    font-family: 'icon-slides' !important;
     border-radius: 500rem;
     position: absolute;
     right: 0;
@@ -2816,13 +2819,13 @@ dt {
 }
 @keyframes change-color {
     0%, 100% {
-        color: #223143;
+        color: #ee1466;
     }
     33% {
         color: #0abda3;
     }
     66% {
-        color: #24c3c9;
+        color: #f2b806;
     }
 }
 /*---------------------------------------------
@@ -2846,7 +2849,7 @@ dt {
     line-height: 1;
 }
 .reveal h1, .reveal h2, .reveal h3, .reveal p, .reveal dl {
-    color: #111111;
+    color: var(--white);
 }
 .reveal .controls .navigate-left {
     border-right-color: #0abda3;
@@ -2883,7 +2886,7 @@ dt {
     font-size: .70em;
 }
 .reveal code, .reveal pre {
-    font-family: code;
+    font-family: code !important;
 }
 /*---------------------------------------------
 * Expecific for Zenburn library
@@ -2895,16 +2898,16 @@ dt {
     color: #0abda3;
 }
 .css .hljs-rule .hljs-number {
-    color: #24c3c9;
+    color: #f2b806;
 }
 .css .hljs-rule .hljs-value {
     color: #f76bd1;
 }
 .css .hljs-class {
-    color: #223143;
+    color: #ee1466;
 }
 .hljs-string {
-    color: #24c3c9;
+    color: #f2b806;
 }
 .hljs-subst {
     color: #0abda3;
